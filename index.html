@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXE MOTORS | Premium Car Collection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">LUXE<span>.</span></a>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#cars">Featured</a>
+        <a href="#inventory">All Cars</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#inventory" class="nav-btn">Explore Cars</a>
+</header>
+
+<main>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">WELCOME TO LUXE MOTORS</p>
+        <h1>DRIVE YOUR<br><span>DREAM.</span></h1>
+        <p class="hero-description">
+            Experience extraordinary performance,
+            timeless elegance and the finest luxury cars.
+        </p>
+        <a href="#inventory" class="main-btn">EXPLORE COLLECTION ↗️</a>
+    </div>
+    <div class="hero-number">01 / 04</div>
+    <div class="hero-label">THE ART OF DRIVING</div>
+</section>
+
+<section class="cars-section" id="cars">
+    <p class="eyebrow">HANDPICKED FOR YOU</p>
+    <h2>Featured <span>Collection</span></h2>
+    <p>Our most exclusive vehicles.</p>
+    <div class="cars-grid" id="carsGrid"></div>
+    <a href="#inventory" class="main-btn">VIEW ALL CARS ↗️</a>
+</section>
+
+<section class="inventory-section" id="inventory">
+    <p class="eyebrow">FIND YOUR PERFECT RIDE</p>
+    <h2>Explore Our <span>Inventory</span></h2>
+
+    <div class="car-filters">
+        <input type="text" id="searchInput" placeholder="Search for a car...">
+
+        <select id="brandFilter">
+            <option value="all">All Brands</option>
+            <option value="Mercedes">Mercedes-Benz</option>
+            <option value="BMW">BMW</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Ferrari">Ferrari</option>
+            <option value="Lamborghini">Lamborghini</option>
+        </select>
+
+        <select id="sortFilter">
+            <option value="default">Sort By</option>
+            <option value="low">Price: Low to High</option>
+            <option value="high">Price: High to Low</option>
+        </select>
+    </div>
+
+    <div class="cars-grid" id="allCarsGrid"></div>
+    <p id="noResults" hidden>No cars found. Try another search.</p>
+</section>
+
+<section class="about-section" id="about">
+    <p class="eyebrow">BEYOND EXPECTATIONS</p>
+    <h2>Luxury is not a choice.<br>It's a <span>lifestyle.</span></h2>
+    <p>Discover a new standard of automotive excellence.</p>
+</section>
+
+</main>
+
+<footer id="contact">
+    <a href="#" class="logo">LUXE<span>.</span></a>
+    <p>© 2026 LUXE MOTORS. ALL RIGHTS RESERVED.</p>
+    <a href="https://wa.me/" target="_blank">Contact Us ↗️</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
